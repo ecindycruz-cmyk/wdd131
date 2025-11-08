@@ -2,21 +2,26 @@
 <html lang="en">
 
 <head>
-  <!--Content-->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 131: Dynamic Web Fundamentals - Cindy Cruz</title>
-  <meta name="description" content="WDD 131-Dynamic Web fundamentals|Keyboard summary of the page content">
+  <meta name="description"
+    content="WDD 131-Dynamic Web fundamentals: Portafolio personal de Cindy Cruz, desarrolladora web de El Salvador, con enfoque en HTML, CSS y JavaScript.">
   <meta name="author" content="Cindy Cruz">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/base.css">
+
   <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
   <header>
-    <span id="course-title">WDD 131: Dynamic Web Fundamentals -</span>
-    <h1> <small>Cindy Cruz</small></h1>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals - Cindy Cruz</span>
+
     <nav>
       <a href="https://www.linkedin.com/feed/" target="_blank">LinkedIn</a>
       <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
@@ -24,11 +29,11 @@
       <a href="#">Final Project</a>
     </nav>
   </header>
-  <!--Two section tags each with the class attribute named "card"-->
 
   <main class="content-container">
+    <!--<h1><small>Cindy Cruz</small></h1>-->
 
-    <section class="card-about-me">
+    <section class="card">
       <h2>About Me</h2>
       <div class="card-bio-content">
         <p>My name is Cindy, and I'm from El Salvador. I live with my family in San Salvador. I currently work at the
@@ -36,7 +41,7 @@
           distribution center, providing customer service. I have a daughter who is a fun-loving girl. She studies and
           enjoys
           drawing, and I love spending time with her. I like to study and learn new things.</p>
-        <img src="images/picture.jpeg" alt="Profile Picture">
+        <img src="images/picture.jpeg" alt="Profile Picture of Cindy Cruz">
       </div>
       <hr>
       <div class="location-info">
@@ -57,27 +62,27 @@
             public schools.</p>
         </div>
         <p class="flag-caption">Official Flag of El Salvador</p>
-
       </div>
     </section>
 
-    <aside class="web-dev-resources">
+    <section class="card">
       <h2>Web Dev Resources</h2>
       <ul>
-        <li><a href="#">Dev.to Community</a></li>
-        <li><a href="#">Smashing Magazine</a></li>
-        <li><a href="#">CSSTricks</a></li>
-        <li><a href="#">W3 Schools</a></li>
-        <li><a href="#">Udemy</a></li>
-        <li><a href="#">Image Placeholder</a></li>
+        <li><a href="https://dev.to/">Dev.to Community</a></li>
+        <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+        <li><a href="https://css-tricks.com/">CSSTricks</a></li>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a
+            href="https://www.udemy.com/?utm_source=adwords-brand&utm_medium=udemyads&utm_campaign=Brand-Udemy_la.EN_cc.ROW&campaigntype=Search&portfolio=BrandDirect&language=EN&product=Course&test=&audience=Keyword&topic=&priority=&utm_content=deal4584&utm_term=_._ag_80315195513_._ad_535757779892_._kw_udemy_._de_c_._dm__._pl__._ti_kwd-296956216253_._li_1012108_._pd__._&matchtype=b&gad_source=1&gad_campaignid=6615782791&gbraid=0AAAAADROdO3utrD2xVO2_t-mBWXwRyw-Z&gclid=CjwKCAiA8bvIBhBJEiwAu5ayrPwIpRlHtlCu474GxNTO6f5kH0FBtgQCp9uXZ7JBrgP78TFT8FkrqxoChAkQAvD_BwE">Udemy</a>
+        </li>
+        <li><a href="https://placehold.co/">Image Placeholder</a></li>
       </ul>
-    </aside>
+    </section>
   </main>
 
   <footer>
-    <!--The copyright symbol and current year-->
     <p>
-      &copy; <span id="currentyear"></span> Cindy Cruz El Salvador
+      &copy; <span id="currentyear"></span> Cindy Cruz ⭐ El Salvador
     </p>
     <p id="lastModified">Last Modification: </p>
   </footer>
