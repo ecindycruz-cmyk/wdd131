@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Acme, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+main {
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    padding: 0.5rem;
+}
+
+button {
+    margin: 0.5rem;
+}
+
+
+
+.input input,
+.input button {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input button {
+    background-color: white;
+    color: black;
+}
+
+.list {
+    padding: 0.5rem;
+}
+
+ul {
+    margin: 1rem;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+}
+
+.delete-button {
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    padding: 0.1rem 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    width: auto;
+}
+
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        width: 320px;
+    }
+}
