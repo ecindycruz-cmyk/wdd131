@@ -1,0 +1,34 @@
+@media (min-width: 768px) {
+    .temples {
+        display: none;
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 40px;
+    }
+
+    #main-nav {
+        display: block !important;
+        width: auto;
+    }
+
+    #main-nav ul {
+        flex-direction: row;
+    }
+
+    #main-nav ul li {
+        border-top: none;
+    }
+
+    #main-nav a {
+        padding: 15px 15px;
+    }
+
+    .images {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+}
