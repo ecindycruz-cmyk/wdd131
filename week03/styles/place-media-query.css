@@ -72,6 +72,32 @@
     border-radius: 8px 8px 0 0;
   }
 
+    .data-section h2,
+    .weather-section h2 {
+      position: relative;
+  
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  
+    /* PSEUDOELEMENTO ::AFTER */
+
+    .weather-section h2::after {
+      content: "";
+    
+      background-image: url('/week03/images/cloud-sun.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+  
+      width: 30px;
+      height: 30px;
+      margin-left: 0;
+  
+      display: inline-block;
+      vertical-align: middle;
+    }
+
   .emoji-icon {
     display: inline-block;
     height: 1.5em;
