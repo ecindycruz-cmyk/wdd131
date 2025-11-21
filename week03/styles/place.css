@@ -115,14 +115,10 @@ main {
 }
 
 .emoji-icon {
-  display: inline-block;
+  display: none;
   height: 1.5em;
   width: 1.5em;
 }
-
- .emoji-icon {
-   display: none;
- }
 
 .emoji-icon svg {
   height: 100%;

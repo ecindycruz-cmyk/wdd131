@@ -98,16 +98,7 @@
       vertical-align: middle;
     }
 
-  .emoji-icon {
-    display: inline-block;
-    height: 1.5em;
-    width: 1.5em;
-  }
 
- .emoji-icon {
-   display: none;
- }
- 
   .emoji-icon svg {
     height: 100%;
     width: 100%;
