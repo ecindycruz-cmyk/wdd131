@@ -1,3 +1,15 @@
+@media screen and (max-width: 599px) {
+  .weather-section h2 .emoji-icon {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .weather-section h2::after {
+    content: none;
+  }
+
+}
+
 @media (min-width: 600px) {
 
   main {
@@ -35,6 +47,16 @@
     object-position: center;
   }
 
+    .weather-section h2 {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .weather-section h2 .emoji-icon {
+      display: none;
+    }
 
   .data-section,
   .weather-section {
