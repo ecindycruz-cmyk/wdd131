@@ -114,6 +114,10 @@ main {
   border-radius: 5px 5px 0 0;
 }
 
+.weather-section h2::after {
+  content: none;
+}
+
 .emoji-icon {
   display: none;
   height: 1.5em;

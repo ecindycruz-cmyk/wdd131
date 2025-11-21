@@ -1,3 +1,23 @@
+@media screen and (max-width: 599px) {
+
+  .weather-section h2::after {
+    content: "";
+    background-image: url('/week03/images/cloud-sun.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .emoji-icon {
+    display: none;
+  }
+}
+
+
 @media (min-width: 600px) {
 
   main {
@@ -81,10 +101,13 @@
       align-items: center;
     }
   
+    .weather-section h2 {
+      justify-content: flex-start;
+    }
     /* PSEUDOELEMENTO ::AFTER */
 
     .weather-section h2::after {
-      content: "";
+      content: none;
     
       background-image: url('/week03/images/cloud-sun.svg');
       background-size: contain;
@@ -94,7 +117,7 @@
       height: 30px;
       margin-left: 0;
   
-      display: none;
+      display: inline-block;
       vertical-align: middle;
     }
 
