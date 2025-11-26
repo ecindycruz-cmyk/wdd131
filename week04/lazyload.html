@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Example</title>
+    <meta name="description" content="">
+    <meta name="author" content="Cindy Cruz">
+    
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Lazy Load Demostration</h1>
+    </header>
+    <main>
+        <picture>
+            <img data-src="https://placekitten.com/400/600" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img data-src="https://placekitten.com/400/700" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img data-src="https://placekitten.com/400/800" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img data-src="https://placekitten.com/400/650" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img data-src="https://placekitten.com/400/750" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+        <picture>
+            <img data-src="https://placekitten.com/400/850" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+        </picture>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Cindy Cruz ⭐ El Salvador
+        </p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    
+</body>
+</html>
