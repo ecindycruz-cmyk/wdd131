@@ -1,0 +1,245 @@
+:root {
+    --primary-color: #3f51b5;
+    --secondary-color: #ffc107;
+    --background-color: #f4f7f6;
+    --text-color: #333;
+    --border-color: #ddd;
+    --focus-glow: 0 0 5px rgba(63, 81, 181, 0.5);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* --- Header & Footer --- */
+header,
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 300;
+}
+
+footer {
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+/* --- Main Layout --- */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Form Styling --- */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: var(--focus-glow);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* --- Rating Group (Radio Buttons) --- */
+.rating-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.rating-group label {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: normal;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.rating-group input[type="radio"] {
+    display: none;
+}
+
+.rating-group input[type="radio"]:checked+label {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border-color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* --- Checkbox Group --- */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+
+/* --- Submission Button --- */
+.submit-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="submit"]:hover {
+    background-color: #303f9f;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.confirmation-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    text-align: center;
+}
+
+.confirmation-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.counter-display {
+    background-color: #e8eaf6;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+    border-left: 5px solid var(--primary-color);
+}
+
+.count-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    display: block;
+    margin-top: 5px;
+}
+
+.confirmation-box a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Mobile Responsiveness (Adjustments for smaller screens) --- */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    form,
+    .confirmation-box {
+        padding: 20px;
+    }
+
+    .rating-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .rating-group label {
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
