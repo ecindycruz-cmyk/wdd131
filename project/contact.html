@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidden Places of El Salvador: Unforgettable Sites - Home</title>
+  <link rel="stylesheet" href="styles/project.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<main>
+  <section class="page-hero" style="background-image: url('images/contact-hero.webp');">
+    <h1>Contact us for a personalized trip</h1>
+  </section>
+
+  <section class="contact-form-section">
+    <h2>Request your Guided Tour</h2>
+    <p>Complete the form and we'll send you a personalized proposal within 24 hours.</p>
+
+    <form id="contact-form">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{8,15}"
+          title="Ingresa un número de teléfono válido (8-15 dígitos)" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Travel Comments / Interests:</label>
+        <textarea id="comment" name="comment" rows="5" required></textarea>
+      </div>
+
+      <button type="submit" class="cta-button">Submit Application</button>
+    </form>
+
+    <div id="form-output" class="output-message"></div>
+  </section>
+</main>
+
+<footer class="main-footer">
+  <p>&copy; 2025 Hidden Places El Salvador. All rights reserved.</p>
+  <p> Cindy Cruz - November 2025</p>
+</footer>
+
+<script src="scripts/project.js"></script>
+
+</html>
