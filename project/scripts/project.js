@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mobileMenu = document.querySelector('.mobile-menu');
 
     const toggleMenu = () => {
-        // Modifying DOM: Alternar la clase 'active'
+        // Modifying DOM: Alternar clase 'active'
         mobileMenu.classList.toggle('active');
     };
 
