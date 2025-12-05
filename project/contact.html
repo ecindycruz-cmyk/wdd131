@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hidden Places of El Salvador: Unforgettable Sites - Home</title>
+  <title>WDD 131 - Hidden Places of El Salvador: Unforgettable Sites - Contact Form</title>
+  <meta name="description"
+    content="This page is a form that the user can fill out to obtain information about the place they are interested in."">
+  <meta name=" author" content="Cindy Cruz">
   <link rel="stylesheet" href="styles/project.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
@@ -13,59 +16,86 @@
 
 <body style="background-image: url('images/background_beach.webp');">
 
-<header class="main-header">
-  <div class="logo">
-    <a href="index.html">
-      <span class="logo-wave">~</span><span class="logo-mountain">/\</span>
-      <span class="logo-text">Hidden Places</span>
-    </a>
-  </div>
-</header>
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html">
+        <span class="logo-wave">~</span><span class="logo-mountain">/\</span>
+        <span class="logo-text">Hidden Places</span>
+      </a>
+    </div>
 
-<main>
-  <section class="page-hero">
-    <h1>Contact us for a personalized trip</h1>
-  </section>
+    <nav class="desktop-menu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="beach.html">Ruta Beach</a></li>
+        <li><a href="volcan_archaeology.html">Volcanoes and Archaeological</a></li>
+        <li class="contact-btn-li"><a href="contact.html" class="contact-button">Contact Us</a></li>
+      </ul>
+    </nav>
 
-  <section class="contact-form-section">
-    <h2>Request your Guided Tour</h2>
-    <p>Complete the form and we'll send you a personalized proposal within 24 hours.</p>
+    <button class="hamburger-menu" aria-label="Open Menu of the Navegation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <form id="contact-form">
-      <div class="form-group">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
+    <nav class="mobile-menu hidden">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="beach.html">Ruta Beach</a></li>
+        <li><a href="volcan_archaeology.html">Volcanoes and Archaeological</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <div class="form-group">
-        <label for="phone">Phone number:</label>
-        <input type="tel" id="phone" name="phone" pattern="[0-9]{8,15}"
-          title="Ingresa un número de teléfono válido (8-15 dígitos)" required>
-      </div>
+  <main>
+    <section class="page-hero">
+      <h1>Contact us for a personalized trip</h1>
+    </section>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
+    <section class="contact-form-section">
+      <h2>Request your Guided Tour</h2>
+      <p>Complete the form and we'll send you a personalized proposal within 24 hours.</p>
 
-      <div class="form-group">
-        <label for="comment">Travel Comments / Interests:</label>
-        <textarea id="comment" name="comment" rows="5" required></textarea>
-      </div>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
 
-      <button type="submit" class="cta-button">Submit Application</button>
-    </form>
+        <div class="form-group">
+          <label for="phone">Phone number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{8,15}"
+            title="Enter a valid phone number (8-15 digits)" placeholder="1235551234" required>
+        </div>
 
-    <div id="form-output" class="output-message"></div>
-  </section>
-</main>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+        </div>
 
-<footer class="main-footer">
-  <p>&copy; 2025 Hidden Places of El Salvador | All rights reserved.</p>
-  <p> Cindy Cruz - December 2025</p>
-</footer>
+        <div class="form-group">
+          <label for="comment">Travel Comments / Interests:</label>
+          <textarea id="comment" name="comment" rows="5" required></textarea>
+        </div>
 
-<script src="scripts/project.js"></script>
+        <button type="submit" class="cta-button">Submit Application</button>
+      </form>
+
+      <div id="form-output" class="output-message"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Cindy Cruz ⭐ El Salvador
+    </p>
+    <p id="lastModified">Last Modification: </p>
+  </footer>
+
+
+  <script src="scripts/project.js"></script>
 
 </body>
 

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Modifying DOM: Alternar clase 'active'
         mobileMenu.classList.toggle('active');
     };
-
+    
     // Listening for and Reacting to Events
     if (hamburger) {
         hamburger.addEventListener('click', toggleMenu);
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Conditional Branching: basic validation
         if (!name || !phone || !email || !comment) {
             formOutput.innerHTML = `
-                <p class="error-message">🛑 Por favor, completa todos los campos del formulario.</p>
+                <p class="error-message">🛑Please complete all fields of the form.</p>
             `;
             return;
         }
@@ -88,10 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const outputString = `
             <div class="success-message">
-                ✅ ¡Gracias, **${userData.name}**! Tu solicitud ha sido enviada.
-                <p>Te contactaremos pronto al email: **${userData.email}**</p>
-                <p class="small-text">Tu comentario: *${userData.comment.substring(0, 50)}...*</p>
-                <p class="small-text">Solicitudes pendientes: **${submissions.length}**</p>
+                ✅ Thank you!, ${userData.name}! Your request has been sent.
+                <p>We will contact you soon via email: ${userData.email}</p>
+                <p class="small-text">Your comment: ${userData.comment.substring(0, 50)}</p>
+                <p class="small-text">Pending applications: ${submissions.length}</p>
             </div>
         `;
 
@@ -102,5 +102,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         contactForm.addEventListener('submit', handleFormSubmit);
+    }
+
+    const yearElement = document.getElementById("currentyear");
+    const currentYear = new Date().getFullYear();
+
+    if (yearElement) {
+        yearElement.textContent = currentYear;
+    }
+
+    const modifiedElement = document.getElementById("lastModified");
+
+    if (modifiedElement) {
+        modifiedElement.textContent += document.lastModified;
     }
 });

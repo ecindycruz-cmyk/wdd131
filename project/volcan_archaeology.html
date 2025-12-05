@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hidden Places of El Salvador: Unforgettable Sites - Home</title>
+  <title>WDD 131 - Hidden Places of El Salvador: Unforgettable Sites - Volcanoes and Archaeology</title>
+  <meta name="description"
+    content="This page contains information on various places such as volcanoes and archaeological sites, and includes a brief description of each.">
+  <meta name="author" content="Cindy Cruz">
   <link rel="stylesheet" href="styles/project.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap"
@@ -13,67 +16,95 @@
 
 <body style="background-image: url('images/background_beach.webp');">
 
-<header class="main-header">
-  <div class="logo">
-    <a href="index.html">
-      <span class="logo-wave">~</span><span class="logo-mountain">/\</span>
-      <span class="logo-text">Hidden Places</span>
-    </a>
-  </div>
-</header>
+  <header class="main-header">
+    <div class="logo">
+      <a href="index.html">
+        <span class="logo-wave">~</span><span class="logo-mountain">/\</span>
+        <span class="logo-text">Hidden Places</span>
+      </a>
+    </div>
 
-<main>
-  <section class="page-hero" >
-    <h1>Volcanoes and Archaeological Treasures</h1>
-  </section>
+    <nav class="desktop-menu">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="beach.html">Ruta Beach</a></li>
+        <li><a href="volcan_archaeology.html">Volcanoes and Archaeological</a></li>
+        <li class="contact-btn-li"><a href="contact.html" class="contact-button">Contact Us</a></li>
+      </ul>
+    </nav>
 
-  <section id="volcanes" class="site-list">
-    <h2>Walking on Giants</h2>
+    <button class="hamburger-menu" aria-label="Open Menu of the Navegation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <article class="destination-card">
-      <img data-src="images/volcansa.webp" alt="Volcán de Santa Ana" class="lazy" width="600" height="400">
-      <div class="info">
-        <h3>Santa Ana Volcano</h3>
-        <p>Location: Department of Santa Ana, part of the Apaneca Mountain Range.</p>
-        <p>Date of last eruption: October 1, 2005.</p>
-        <p>Description: The tallest volcano in El Salvador, known for its turquoise crater lake.</p>
-      </div>
-    </article>
+    <nav class="mobile-menu hidden">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="beach.html">Ruta Beach</a></li>
+        <li><a href="volcan_archaeology.html">Volcanoes and Archaeological</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <article class="destination-card">
-      <img data-src="images/boqueron_.webp" alt="Volcán de San Salvador" class="lazy" width="600" height="400">
-      <div class="info">
-        <h3>San Salvador Volcano</h3>
-        <p>Location: Department of San Salvador, located in San Salvador.</p>
-        <p>Date of last eruption: 1917</p>
-        <p>Description: El Boquerón National Park is located in the crater of the San Salvador volcano; it is a protected area with a great
-        diversity of fauna and flora.</p>
-      </div>
-    </article>
-  </section>
+  <main>
+    <section class="page-hero">
+      <h1>Volcanoes and Archaeological Treasures</h1>
+    </section>
 
-  <section id="arqueologia" class="site-list">
-    <h2>Mayan Archaeological Sites</h2>
+    <section id="volcanes" class="site-list">
+      <h2>Walking on Giants</h2>
 
-    <article class="destination-card">
-      <img data-src="images/joya-de-ceren.webp" alt="Sitio Arqueológico Joya de Cerén" class="lazy" width="600"
-        height="400">
-      <div class="info">
-        <h3>Joya de Cerén</h3>
-        <p>Location: Department of La Libertad.</p>
-        <p>Date of 'inauguration' as a modern site (discovery): 1976.</p>
-        <p>Description: Called the "Pompeii of America", a Mayan town that was preserved under volcanic ash.</p>
-      </div>
-    </article>
-  </section>
-</main>
+      <article class="destination-card">
+        <img data-src="images/volcansa.webp" alt="Volcán de Santa Ana" class="lazy" width="600" height="400">
+        <div class="info">
+          <h3>Santa Ana Volcano</h3>
+          <p><strong>Location:</strong> Department of Santa Ana, part of the Apaneca Mountain Range.</p>
+          <p>Date of last eruption: October 1, 2005.</p>
+          <p><strong>Description:</strong> The tallest volcano in El Salvador, known for its turquoise crater lake.</p>
+        </div>
+      </article>
 
-<footer class="main-footer">
-  <p>&copy; 2025 Hidden Places of El Salvador | All rights reserved.</p>
-  <p> Cindy Cruz - December 2025</p>
-</footer>
+      <article class="destination-card">
+        <img data-src="images/boqueron_.webp" alt="Volcán de San Salvador" class="lazy" width="600" height="400">
+        <div class="info">
+          <h3>San Salvador Volcano</h3>
+          <p><strong>Location:</strong>Department of San Salvador, located in San Salvador.</p>
+          <p>Date of last eruption: 1917</p>
+          <p><strong>Description:</strong> El Boquerón National Park is located in the crater of the San Salvador volcano; it is a
+            protected area with a great
+            diversity of fauna and flora.</p>
+        </div>
+      </article>
+    </section>
 
-<script src="scripts/project.js"></script>
+    <section id="arqueologia" class="site-list">
+      <h2>Mayan Archaeological Sites</h2>
+
+      <article class="destination-card">
+        <img data-src="images/joya-de-ceren.webp" alt="Sitio Arqueológico Joya de Cerén" class="lazy" width="600"
+          height="400">
+        <div class="info">
+          <h3>Joya de Cerén</h3>
+          <p><strong>Location:</strong> Department of La Libertad.</p>
+          <p>Date of 'inauguration' as a modern site (discovery): 1976.</p>
+          <p><strong>Description:</strong> Called the "Pompeii of America", a Mayan town that was preserved under volcanic ash.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> Cindy Cruz ⭐ El Salvador
+    </p>
+    <p id="lastModified">Last Modification: </p>
+  </footer>
+
+
+  <script src="scripts/project.js"></script>
 </body>
 
 </html>
